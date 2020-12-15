@@ -11,7 +11,7 @@
 raindrops () {
 
 if [ "$#" -ne 1 ]; then
-  echo "Usage: raindrops.sh <number>" 1>&2
+  echo "Usage: $( basename $0 ) <number>" 1>&2
   return 1
 fi
 
@@ -22,7 +22,8 @@ phrase0=""
 (( $1%7 == 0 )) && phrase0+="Plong"
 
 echo ${phrase0:-$1}
-return 
+return 0
 }
 
 raindrops "$@"
+exit 0
