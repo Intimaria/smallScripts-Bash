@@ -18,8 +18,8 @@
 		echo "Usage: $( basename $0 ) <single integer>" 
 		exit 1
 	fi
-	secret_code=('wink' 'double-blink' 'close-your-eyes' 'jump')
-	ret=()
+secret_code=('wink' 'double-blink' 'close-your-eyes' 'jump')
+ret=()
  
 
     main () {
