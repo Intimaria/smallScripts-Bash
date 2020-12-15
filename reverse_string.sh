@@ -2,15 +2,15 @@
 # Reverse a string
 
 # test for input 
-if [ $# -lt 1 ]; then
+if [[ -z "$@" ]]; then
     echo "Usage: $( basename $0 ) <string>" 
-		exit 1
+    exit 1
 fi
 
 function print_backwards()
 {
-   rev <<< "$@"
-   return 0
+    rev <<< "$@"
+    return 0
 }
 
 print_backwards "$@"
