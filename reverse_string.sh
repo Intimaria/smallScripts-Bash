@@ -2,7 +2,7 @@
 # Reverse a string
 
 # test for input 
-if [ $# -lt 1]; then
+if [ $# -lt 1 ]; then
     echo "Usage: $( basename $0 ) <string>" 
 		exit 1
 fi
