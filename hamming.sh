@@ -12,7 +12,7 @@
 
 # Must receive two strings
 if [ $# -ne 2 ]; then
-  echo "Usage: hamming.sh <string1> <string2>" 
+  echo "Usage: $( basename $0 ) <string1> <string2>" 
   exit 1
 fi
 
@@ -56,7 +56,7 @@ answer=$(compare "$strandone" "$strandtwo")
 
 # STDOUT of Hamming Distance
 echo "$answer"
-
+return 0
 }
 main "$@"
 
