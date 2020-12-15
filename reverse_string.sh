@@ -9,7 +9,7 @@ fi
 
 function print_backwards()
 {
-   rev <<< "$1"
+   rev <<< "$@"
    return 0
 }
 
