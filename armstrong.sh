@@ -13,7 +13,7 @@ main () {
 	for (( i = 0; i < "${#1}"; ++i )); do
 		num=$(("num"+"${1:$i:1}"**"${#1}")) 
 	done
-	# if input equals calculation result, it's an armstrong.
+	# if input equals calculation result, it's an armstrong number.
 	[[ "$num" -eq "$1" ]] && echo "true" || echo "false"
 }
 main "$@"
