@@ -9,6 +9,7 @@ then
 	exit 1
 fi
 
+# checks phrase (as lowercase) for every letter in range a-z
 contains_alphabet () {
 for i in {a..z}; do
 	[[ "${1,,}" = *$i* ]] || return 1
